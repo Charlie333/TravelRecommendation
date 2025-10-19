@@ -140,4 +140,38 @@ h1{
     margin-block-end: 5px;
   } 
   
+  /* Contact Us */
+  
+  #contact h2{
+    padding:50px;
+    color: white;
+    font-size:50px
+}
+
+#contact p{
+    position: center;
+    color:white;
+    font-size: 20px;
+    padding-left:50px;
+    margin-top:20px;
+    margin-bottom:30px;   
+}
+
+
+  .flex_ceter input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  .flex_center fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid white;
+    width: 50%;
+  }
   

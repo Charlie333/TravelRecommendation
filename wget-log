@@ -55,4 +55,32 @@ Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443...
 Retrying.
 
 --2025-10-19 05:24:01--  (try: 6)  https://media.istockphoto.com/id/1939845805/photo/koh-samet-island-rayong-thailand-white-tropical-beach-of-samed-island-with-a-turqouse-colored.jpg?s=612x612
-Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... 
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443... failed: Connection timed out.
+Retrying.
+
+--2025-10-19 05:42:07--  (try: 7)  https://media.istockphoto.com/id/1939845805/photo/koh-samet-island-rayong-thailand-white-tropical-beach-of-samed-island-with-a-turqouse-colored.jpg?s=612x612
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443... failed: Connection timed out.
+Retrying.
+
+--2025-10-19 06:00:13--  (try: 8)  https://media.istockphoto.com/id/1939845805/photo/koh-samet-island-rayong-thailand-white-tropical-beach-of-samed-island-with-a-turqouse-colored.jpg?s=612x612
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.75|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.101|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.56|:443... failed: Connection timed out.
+Connecting to media.istockphoto.com (media.istockphoto.com)|3.162.103.60|:443... 
