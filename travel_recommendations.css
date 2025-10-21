@@ -49,19 +49,20 @@ h1{
 /*Homepage*/
 
 #home h1{
-    margin-top: 30px;
     color:white;
-    font-size: 70px;
+    font-size: 50px;
     width:100px;
-    padding:50px;
+    padding-left:50px;
+    padding-top:50px;
 }
 
 #home p{
     margin-top: 30px;
     color:white;
-    font-size: 20px;
+    font-size: 15px;
     width:400px; 
-    padding:50px; 
+    padding-left:50px;
+    padding-top:10px; 
 }
   
   button {
@@ -75,8 +76,20 @@ h1{
   button:hover {
     background-color: #45a049;
   }
-  
 
+.intro{
+    float:left;
+}
+
+.searchCondition{
+    display:inline;
+    float:right;
+    position:relative;
+    top:-0;
+    color: white;
+    margin:0;
+    padding:0;
+}
 
 
 /* About Us */

@@ -17,8 +17,8 @@ fetch('./travel_recommendation_api.json')
             console.log(data[searchResult][0].name);
             console.log(data[searchResult].length)
             for(var i = 0; i<data[searchResult].length; i++){
-              resultDiv.innerHTML += `<p><strong>Name:</strong> ${data[searchResult][i].name}</p>`;
-              resultDiv.innerHTML += `<p><strong>Description:</strong> ${data[searchResult][i].description}</p>`;
+              resultDiv.innerHTML += `<p style ="font-weight:bold">${data[searchResult][i].name}</p>`;
+              resultDiv.innerHTML += `<p>${data[searchResult][i].description}</p>`;
             }
         })
     }
