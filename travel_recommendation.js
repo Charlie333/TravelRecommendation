@@ -1,4 +1,5 @@
 const srchButton = document.getElementById("btnSearch");
+const rstButton = document.getElementById("btnReset");
 const searchInput = document.getElementById('conditionInput');
 const resultDiv = document.getElementById('result');
 resultDiv.innerHTML = '';
@@ -10,20 +11,48 @@ fetch('./travel_recommendation_api.json')
         console.log("Travel Recommendation Data:", data);
 
         srchButton.addEventListener('click', () => {
-            const searchTerm = searchInput.value.toLowerCase();
+            var searchTerm = searchInput.value.toLowerCase();
             console.log(searchTerm);
-            const searchResult = getSearchItem(data,searchTerm);
+            var searchResult = ''
+            var searchResult = getSearchItem(data,searchTerm);
             console.log(searchResult);
             console.log(data[searchResult][0].name);
-            if (data[searchResult].length > 0 &&(data[searchResult][0].name="beaches" ||"temples"))
-            for(var i = 0; i<data[searchResult].length; i++){
-              resultDiv.innerHTML += `<p style ="font-weight:bold">${data[searchResult][i].name}</p>`;
-              resultDiv.innerHTML += `<p>${data[searchResult][i].description}</p>`;
-              resultDiv.innerHTML += `<img src="${data[searchResult][i].imageUrl}" alt="picture">`;
+            if (data[searchResult].length > 0){
+               if(searchResult === "beaches"||searchResult === "temples"){
+                console.log('aaa');
+                for(var i = 0; i<data[searchResult].length; i++){
+                    resultDiv.innerHTML += `<p style ="font-weight:bold">${data[searchResult][i].name}</p>`;
+                    resultDiv.innerHTML += `<p>${data[searchResult][i].description}</p>`;
+                    resultDiv.innerHTML += `<img src="${data[searchResult][i].imageUrl}" alt="picture">`;
+                  }
+                }
+                else if(searchResult==="countries"){
+                    console.log(data[searchResult]);
+                    console.log(data[searchResult][1].cities[1]);
+                    for(var i = 0; i<data[searchResult].length; i++){
+                        for(var j = 0; j<data[searchResult][i].cities.length; j++){
+                        resultDiv.innerHTML += `<p style ="font-weight:bold">${data[searchResult][i].cities[j].name}</p>`;
+                        resultDiv.innerHTML += `<p>${data[searchResult][i].cities[j].description}</p>`;
+                        resultDiv.innerHTML += `<img src="${data[searchResult][i].cities[j].imageUrl}" alt="picture">`;
+                      }
+
+                    }
+                }
+                else{
+                    console.log('No matching record found');
+                }
+
             }
-        })
-    }
-);
+    })
+
+    rstButton.addEventListener('click', () => {
+        searchInput.value = '';
+        resultDiv.innerHTML = '<p></p>';
+    });
+
+        // Initial reset when page loads
+        resultDiv.innerHTML = '<p></p>';
+});
 
 
 function getSearchItem(data,searchItem){
