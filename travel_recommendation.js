@@ -15,10 +15,11 @@ fetch('./travel_recommendation_api.json')
             const searchResult = getSearchItem(data,searchTerm);
             console.log(searchResult);
             console.log(data[searchResult][0].name);
-            console.log(data[searchResult].length)
+            if (data[searchResult].length > 0 &&(data[searchResult][0].name="beaches" ||"temples"))
             for(var i = 0; i<data[searchResult].length; i++){
               resultDiv.innerHTML += `<p style ="font-weight:bold">${data[searchResult][i].name}</p>`;
               resultDiv.innerHTML += `<p>${data[searchResult][i].description}</p>`;
+              resultDiv.innerHTML += `<img src="${data[searchResult][i].imageUrl}" alt="picture">`;
             }
         })
     }

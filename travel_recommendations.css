@@ -84,11 +84,15 @@ h1{
 .searchCondition{
     display:inline;
     float:right;
-    position:relative;
     top:-0;
     color: white;
     margin:0;
     padding:0;
+}
+
+.searchCondition img{
+    height:300px;
+    width: 300px;
 }
 
 
@@ -131,7 +135,7 @@ h1{
     font-size: 20px;
   }
   
-  .team, img {
+  .team img {
     height: 35px;
     align-items: center;
   }
